@@ -1,0 +1,45 @@
+/* Showcase Section */
+        .showcase {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .showcase-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .showcase-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .showcase-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .showcase-card:hover {
+            transform: translateY(-5px);
+        }
