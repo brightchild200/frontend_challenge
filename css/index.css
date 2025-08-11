@@ -1,0 +1,115 @@
+/* CSS Variables for Theme */
+:root {
+    --primary-color: #2B7A0B;
+    --accent-color: #4ADE80;
+    --secondary-color: #1E293B;
+    --bg-light: #F0FDF4;
+    --bg-dark: #0F172A;
+    --text-light: #1E293B;
+    --text-dark: #FFFFFF;
+    --card-bg-light: #FFFFFF;
+    --card-bg-dark: #1E293B;
+    --border-light: #E2E8F0;
+    --border-dark: #334155;
+}
+
+[data-theme="dark"] {
+    --bg-color: var(--bg-dark);
+    --text-color: var(--text-dark);
+    --card-bg: var(--card-bg-dark);
+    --border-color: var(--border-dark);
+}
+
+[data-theme="light"] {
+    --bg-color: var(--bg-light);
+    --text-color: var(--text-light);
+    --card-bg: var(--card-bg-light);
+    --border-color: var(--border-light);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: all 0.3s ease;
+}
+
+/* Loader Styles */
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 9999;
+    
+    background: #1E293B;
+    animation: animateBg 10s linear infinite;
+}
+
+@keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.loader-container .loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+
+}
+
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+
+.loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a, ;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+
+    80%,100% {
+        transform: scale(0);
+    }
+}

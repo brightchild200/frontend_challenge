@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -336,4 +337,344 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere - Track. Reduce. Empower.</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/caraousel.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/showcase.css">
+    <link rel="stylesheet" href="./css/stats.css">
+    <link rel="stylesheet" href="./css/testimonial.css">
+
+    <link rel="stylesheet" href="./js/jquery.ripples-min.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body data-theme="light">
+    
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">EcoSphere</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Track. Reduce. Empower.</h1>
+            <p>Revolutionizing sustainability through intelligent data analytics and climate action</p>
+            <a href="#about" class="cta-button">Discover Our Impact</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 data-aos="fade-up">About EcoSphere</h2>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h3>Empowering Sustainable Futures</h3>
+                <p>EcoSphere is a comprehensive sustainability platform that helps organizations track, analyze, and
+                    reduce their environmental impact through cutting-edge technology and data-driven insights.</p>
+                <p>Our mission is to make sustainability accessible, measurable, and actionable for businesses of all
+                    sizes across the globe.</p>
+                <ul class="features-list">
+                    <li>Real-time carbon footprint tracking</li>
+                    <li>AI-powered sustainability recommendations</li>
+                    <li>Comprehensive environmental reporting</li>
+                    <li>Supply chain impact analysis</li>
+                    <li>Renewable energy optimization</li>
+                </ul>
+            </div>
+            <div data-aos="fade-left">
+                <video class="about-video" controls>
+                    <source src="assets/features-services.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section">
+        <div class="stats" data-aos="fade-up">
+            <h2>Our Impact in Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <span class="stat-number">45%</span>
+                    <span class="stat-label">CO₂ Reduction Tracked</span>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <span class="stat-number">3,000+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Countries Served</span>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="impactChart" style="display: none;"></canvas>
+                <img src="assets/graph.png" alt="Impact Chart" class="chart-fallback" id="chartFallback">
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="section">
+        <div class="showcase" data-aos="fade-up">
+            <video class="parallax-video" autoplay muted loop>
+                <source src="assets/parallax-animation.mp4" type="video/mp4">
+            </video>
+            <div class="showcase-content">
+                <h2>Project Showcase</h2>
+                <p>Discover how organizations worldwide are achieving their sustainability goals with EcoSphere</p>
+                <div class="showcase-cards">
+                    <div class="showcase-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Smart Manufacturing</h3>
+                        <p>Reduced energy consumption by 35% through AI-driven optimization and real-time monitoring
+                            systems.</p>
+                    </div>
+                    <div class="showcase-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Green Supply Chain</h3>
+                        <p>Transformed logistics operations with carbon-neutral delivery routes and sustainable
+                            packaging solutions.</p>
+                    </div>
+                    <div class="showcase-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Renewable Integration</h3>
+                        <p>Seamlessly integrated solar and wind power systems, achieving 80% renewable energy adoption.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <h2 data-aos="fade-up">What Our Clients Say</h2>
+        <video class="testimonials-video" controls data-aos="fade-up">
+            <source src="assets/customer-section.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="testimonials-grid">
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <p class="testimonial-text">"EcoSphere transformed our approach to sustainability. We've reduced our
+                    carbon footprint by 40% in just six months."</p>
+                <p class="testimonial-author">- Sarah Chen, Sustainability Director at GreenTech Corp</p>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <p class="testimonial-text">"The real-time analytics and actionable insights have been game-changing for
+                    our environmental strategy."</p>
+                <p class="testimonial-author">- Marcus Rodriguez, CEO of EcoManufacturing</p>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <p class="testimonial-text">"Outstanding platform that makes complex sustainability data accessible and
+                    actionable for our entire organization."</p>
+                <p class="testimonial-author">- Dr. Priya Patel, Environmental Scientist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="section">
+        <div class="carousel-section" data-aos="fade-up">
+            <h2>Innovation Gallery</h2>
+            <video class="carousel-video" controls>
+                <source src="assets/carousel-switch.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <div>
+                            <h3>AI-Powered Analytics</h3>
+                            <p>Advanced machine learning algorithms analyze your environmental data to provide
+                                personalized sustainability recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div>
+                            <h3>Global Impact Network</h3>
+                            <p>Connect with sustainability leaders worldwide and share best practices through our
+                                collaborative platform.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div>
+                            <h3>Carbon Credit Marketplace</h3>
+                            <p>Trade verified carbon credits and offset your emissions through our integrated
+                                marketplace platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn" onclick="previousSlide()">
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <button class="carousel-btn" onclick="nextSlide()">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 data-aos="fade-up">Get Started Today</h2>
+        <div style="text-align: center; padding: 3rem; background: var(--card-bg); border-radius: 20px;"
+            data-aos="fade-up">
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready to transform your sustainability journey?</p>
+            <a href="mailto:contact@ecosphere.com" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>EcoSphere</h3>
+                    <p>Empowering sustainable futures through intelligent technology and data-driven environmental
+                        solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#about" style="color: white; text-decoration: none;">About Us</a></p>
+                    <p><a href="#stats" style="color: white; text-decoration: none;">Our Impact</a></p>
+                    <p><a href="#showcase" style="color: white; text-decoration: none;">Projects</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: contact@ecosphere.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Green Street, EcoCity</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 EcoSphere. All rights reserved. Built for Frontend Battle 2.0</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/chart.js"></script>
+    <script src="./js/effects.js"></script>
+    <script src="./js/funtions.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/stats.js"></script>
+    <script src="./js/theme.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ripples.js Plugin -->
+    <script src="https://cdn.jsdelivr.net/gh/sirxemic/jquery.ripples/jquery.ripples.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+
+        // Add loading states for videos
+        document.querySelectorAll('video').forEach(video => {
+            video.addEventListener('loadstart', function () {
+                this.style.opacity = '0.5';
+            });
+
+            video.addEventListener('canplay', function () {
+                this.style.opacity = '1';
+            });
+        });
+
+        // Error handling for missing videos
+        document.querySelectorAll('video').forEach(video => {
+            video.addEventListener('error', function () {
+                console.log('Video failed to load:', this.src);
+                // You could add fallback content here
+            });
+        });
+
+        // Add click handlers for testimonial cards (expandable)
+        document.querySelectorAll('.testimonial-card').forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.toggle('expanded');
+                // You could add modal functionality here
+            });
+        });
+
+        // Performance optimization: Lazy load videos
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    if (video.dataset.src) {
+                        video.src = video.dataset.src;
+                        video.load();
+                        videoObserver.unobserve(video);
+                    }
+                }
+            });
+        });
+
+        // water ripple effect
+        $(document).ready(function () {
+            $('.hero').ripples({
+                dropRadius: 20,
+                perturbance: 0.06,
+
+            });
+        });
+
+        // Console log for debugging
+        console.log('EcoSphere website loaded successfully!');
+        console.log('Theme:', currentTheme);
+        console.log('Total slides:', totalSlides);
+    </script>
+</body>
+
+>>>>>>> riya
 </html>
